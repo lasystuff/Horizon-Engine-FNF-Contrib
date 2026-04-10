@@ -204,6 +204,8 @@ class PlayState extends MusicBeatState
 		for (char in characterObjects)
 			add(char.strumline);
 
+		scripts.call("onCreatePost");
+
 		startCountdown();
 	}
 

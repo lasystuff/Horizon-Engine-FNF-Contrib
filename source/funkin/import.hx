@@ -26,7 +26,6 @@ import funkin.backend.*;
 import funkin.backend.game.*;
 import funkin.backend.save.ClientPrefs;
 import funkin.play.*;
-// import funkin.ui.mainmenu.MainMenuState;
 import funkin.util.*;
 
 using StringTools;
