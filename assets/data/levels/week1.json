@@ -1,0 +1,10 @@
+{
+    "title": "DADDY DEAREST",
+    "songs": ["bopeebo", "fresh", "dadbattle"],
+    "difficulties": ["easy", "normal", "hard"],
+    "visibility": {
+        "story": true,
+        "freeplay": true
+    },
+    "props": ["dad", "bf", "gf"]
+}

@@ -7,6 +7,7 @@ import sys.io.File;
 class FunkinAssets
 {
 	public static var sparrowCache:Map<String, FlxAtlasFrames> = new Map();
+	
     public static inline function listDirectory(directory:String):Array<String>
     {
         if (Paths.getPath(directory, "assets") == null)
@@ -24,7 +25,6 @@ class FunkinAssets
 		if (sparrowCache.exists(xmlPath))
 			return sparrowCache.get(xmlPath);
 
-        // TODO: use fromFile instead for mod support
 		var frames = FlxAtlasFrames.fromSparrow(Paths.image(key, folder), File.getContent(xmlPath));
 		sparrowCache.set(xmlPath, frames);
 		return frames;
