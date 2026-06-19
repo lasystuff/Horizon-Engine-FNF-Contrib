@@ -1,5 +1,6 @@
 {
     "name": "Friday Night Funkin'",
+    "id": "funkin",
     "description": "A rhythm game made with HaxeFlixel. it's Base Game Port for Horizon Engine",
     "contributors": [
         {

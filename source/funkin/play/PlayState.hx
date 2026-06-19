@@ -9,6 +9,7 @@ import funkin.data.play.*;
 import funkin.data.songs.EventData.EventMetadata;
 import funkin.data.songs.SongData.ChartEventsData;
 import funkin.data.songs.SongData.SongCharacterData;
+import funkin.backend.modding.ContentManager;
 import funkin.objects.Character;
 import funkin.play.notes.*;
 import funkin.play.ui.HUD;
@@ -75,6 +76,8 @@ class PlayState extends MusicBeatState
 
 		if (playlist.length == 0)
 			playlist.push(Song.fromSongId("darnell", "hard", "bf"));
+
+		ContentManager.currentContent = song.content;
 
 		camGame = new FlxCamera();
 		camHUD = new FlxCamera();

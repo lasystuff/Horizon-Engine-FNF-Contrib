@@ -6,6 +6,7 @@ typedef ContentMetadata =
 	@:optional var folder:String;
     
     var name:String;
+    @:optional var id:String;
 
     var description:String;
     @:default([])

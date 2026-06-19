@@ -1,5 +1,6 @@
 {
     "name": "Example Content",
+    "id": "example_content",
     "description": "example content for Horizon Engine!",
     "contributors": [
         {

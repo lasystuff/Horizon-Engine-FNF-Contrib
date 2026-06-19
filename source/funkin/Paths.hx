@@ -71,16 +71,7 @@ class Paths
 
 	public static function getPath(key:String, ?content:String):String
 	{
-		var ret:String = "assets/" + key;
-		if (content != null && content.toLowerCase() == "assets")
-		{
-			if (content.toLowerCase() != "assets")
-				ret = ContentManager.get(content).getPath(key);
-			if (FileSystem.exists(ret))
-				return ret;
-			return null;
-		}
-		if (ContentManager.currentContent != null && ContentManager.get(ContentManager.currentContent).getPath(key) != null)
+		if (ContentManager.currentContent != "assets" && ContentManager.get(ContentManager.currentContent).getPath(key) != null)
 			return ContentManager.get(ContentManager.currentContent).getPath(key);
 
 		for (content in ContentManager.contents)
